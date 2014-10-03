@@ -130,10 +130,11 @@ body {
   background: url(../img/main-display.jpg) no-repeat center top;
   background-size: cover;
   position: relative;
+  padding-left: ;
 }
 @media all and (max-width: 991px) {
   .main-display {
-    height: 755px;
+    height: 835px;
   }
 }
 @media all and (max-width: 767px) {
@@ -141,6 +142,12 @@ body {
     height: auto;
     min-height: 5px;
     overflow: hidden;
+    padding-left: 40px;
+  }
+}
+@media all and (max-width: 530px) {
+  .main-display {
+    padding-left: 20px;
   }
 }
 .main-display .color-overlay {
@@ -186,13 +193,18 @@ body {
 @media all and (max-width: 767px) {
   .main-display .left-side {
     width: 60%;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
+  }
+}
+@media all and (max-width: 700px) {
+  .main-display .left-side {
+    width: 74%;
   }
 }
 @media all and (max-width: 530px) {
   .main-display .left-side {
     width: 100%;
-    padding-bottom: 0px;
+
   }
 }
 .main-display .logo {
@@ -401,6 +413,7 @@ body {
 @media all and (max-width: 767px) {
   #main-nav {
     height: 60px;
+    padding: 0 10px;
   }
 }
 #main-nav .container {
