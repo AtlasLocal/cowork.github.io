@@ -30,7 +30,11 @@ $(document).ready(function(){
 			$('#main-nav').addClass('active');
 			$('#main-nav').stop(true, false).animate({top: 0},200);
 			$('#main-nav ul').stop(true, false).slideToggle(200);
-			$('.site-content').stop(true, false).animate({top: 70}, 200);
+			if ($(window).width() > 767) {
+				$('.site-content').stop(true, false).animate({top: 70}, 200);
+			} else {
+				$('.site-content').stop(true, false).animate({top: 107}, 200);
+			}
 			// $('.people').stop(true, false).animate({marginTop: 210},200);
 			// if ($('.people').hasClass('on-fixed-menu')) {
 			// 	$('.people').stop(true, false).animate({marginTop: 0},200);
