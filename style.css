@@ -1,0 +1,1188 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Colfax bold';
+  src: url("../fonts/ColfaxWebBold.eot");
+  src: url("../fonts/ColfaxWebBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ColfaxWebBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Colfax medium';
+  src: url("../fonts/ColfaxWebMedium.eot");
+  src: url("../fonts/ColfaxWebMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/ColfaxWebMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Colfax regular';
+  src: url("../fonts/ColfaxWebRegular.eot");
+  src: url("../fonts/ColfaxWebRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ColfaxWebRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: regular / bold / italic;
+}
+
+a:focus, li:focus, input:focus, textarea:focus, select:focus {
+  outline: 0;
+}
+
+select {
+  cursor: pointer;
+}
+
+.container {
+  width: 1310px;
+  margin: 0px auto;
+}
+@media all and (max-width: 1330px) {
+  .container {
+    width: 1040px;
+  }
+}
+@media all and (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+}
+@media all and (max-width: 991px) {
+  .container {
+    width: 740px;
+  }
+}
+@media all and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0px 10px;
+  }
+}
+
+body {
+  min-width: 320px;
+}
+
+.main-display {
+  width: 100%;
+  height: 897px;
+  background: url(../img/main-display.jpg) no-repeat center top;
+  background-size: cover;
+  position: relative;
+}
+@media all and (max-width: 991px) {
+  .main-display {
+    height: 755px;
+  }
+}
+@media all and (max-width: 767px) {
+  .main-display {
+    height: auto;
+    min-height: 5px;
+    overflow: hidden;
+  }
+}
+.main-display .color-overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: -webkit-linear-gradient(200deg, #ff5a09 10%, #ff0480 100%);
+  background: -moz-linear-gradient(200deg, #ff5a09 10%, #ff0480 100%);
+  background: -o-linear-gradient(200deg, #ff5a09 10%, #ff0480 100%);
+  -pie-background: linear-gradient(200deg, #ff5a09 10%, #ff0480 100%);
+  background: linear-gradient(200deg, #ff5a09 10%, #ff0480 100%);
+  behavior: url(PIE.php);
+  position: relative;
+  position: absolute;
+}
+.main-display .container {
+  padding: 153px 100px 0px;
+  position: relative;
+  z-index: 2;
+}
+@media all and (max-width: 1330px) {
+  .main-display .container {
+    padding: 153px 0px 0px;
+  }
+}
+@media all and (max-width: 991px) {
+  .main-display .container {
+    padding: 80px 0px 0px;
+  }
+}
+@media all and (max-width: 767px) {
+  .main-display .container {
+    padding: 40px 10px 0px;
+  }
+}
+.main-display .left-side {
+  float: left;
+}
+@media all and (max-width: 767px) {
+  .main-display .left-side {
+    width: 60%;
+    padding-bottom: 80px;
+  }
+}
+@media all and (max-width: 530px) {
+  .main-display .left-side {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+}
+.main-display .logo {
+  margin-left: 1px;
+}
+.main-display .logo a {
+  color: #fff;
+  font-family: 'Colfax medium';
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.main-display .logo a:hover {
+  border-bottom: 3px solid #FFF;
+  padding-bottom: 6px;
+}
+
+.main-display h1 {
+  margin: 66px 0px 34px;
+  padding: 0;
+  line-height: 1.1em;
+  color: #fff;
+  font-size: 80px;
+  font-family: 'Colfax bold';
+}
+@media all and (max-width: 991px) {
+  .main-display h1 {
+    font-size: 60px;
+  }
+}
+@media all and (max-width: 767px) {
+  .main-display h1 {
+    font-size: 40px;
+    margin: 38px 0px 30px;
+  }
+  .main-display h1 br {
+    display: none;
+  }
+}
+.main-display p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: #fff;
+  max-width: 620px;
+  display: block;
+}
+@media all and (max-width: 991px) {
+  .main-display p {
+    max-width: 455px;
+  }
+}
+@media all and (max-width: 767px) {
+  .main-display p {
+    font-size: 24px;
+  }
+}
+.main-display a.call-to-action {
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #f7ff1e;
+  display: block;
+  text-decoration: none;
+  float: left;
+  position: relative;
+  height: auto;
+  min-height: 5px;
+  margin-top: 6px;
+}
+.main-display a.call-to-action:hover {
+  color:#FFF;
+}
+.main-display a.call-to-action:after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  width: 94%;
+  height: 2px;
+  background: #f7ff1e;
+}
+.main-display a.call-to-action span {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+@media all and (max-width: 767px) {
+  .main-display a.call-to-action {
+    font-size: 24px;
+  }
+}
+.main-display .indicators {
+  float: right;
+  margin-top: 92px;
+}
+@media all and (max-width: 767px) {
+  .main-display .indicators {
+    width: 35%;
+    margin-top: 60px;
+  }
+}
+@media all and (max-width: 530px) {
+  .main-display .indicators {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}
+.main-display .indicators ul {
+  margin: 0px;
+  padding: 0px;
+}
+@media all and (max-width: 530px) {
+  .main-display .indicators ul {
+    display: block;
+    text-align: center;
+    height: auto;
+    min-height: 5px;
+    overflow: hidden;
+  }
+}
+.main-display .indicators li {
+  margin: 11px 0px 14px;
+  padding: 0px;
+  list-style-type: none;
+  display: block;
+  height: auto;
+  min-height: 5px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 255px;
+  height: 124px;
+  text-align: center;
+  line-height: 124px;
+}
+@media all and (max-width: 767px) {
+  .main-display .indicators li {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+@media all and (max-width: 530px) {
+  .main-display .indicators li {
+    width: 30%;
+    display: inline-block;
+    margin: 0% 1%;
+  }
+}
+@media all and (max-width: 490px) {
+  .main-display .indicators li {
+    height: 70px;
+    line-height: 70px;
+  }
+}
+.main-display .indicators a {
+  font-family: 'Colfax bold';
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 30px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media all and (max-width: 490px) {
+  .main-display .indicators a {
+    font-size: 24px;
+  }
+}
+.main-display .indicators a:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #ff00ba;
+}
+
+#main-nav {
+  width: 100%;
+  height: 95px;
+  background: #fff;
+  position: relative;
+  z-index: 15;
+}
+#main-nav.fixed {
+  position: fixed;
+  top: 0;
+  height: 95px;
+  z-index: 15;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
+}
+@media all and (max-width: 767px) {
+  #main-nav.fixed {
+    height: 60px;
+  }
+}
+@media all and (max-width: 767px) {
+  #main-nav {
+    height: 60px;
+  }
+}
+#main-nav .container {
+  width: 1110px;
+}
+@media all and (max-width: 1330px) {
+  #main-nav .container {
+    width: 1040px;
+  }
+}
+@media all and (max-width: 1199px) {
+  #main-nav .container {
+    width: 960px;
+  }
+}
+@media all and (max-width: 991px) {
+  #main-nav .container {
+    width: 740px;
+  }
+}
+@media all and (max-width: 767px) {
+  #main-nav .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+#main-nav .mobile-menu-button {
+  display: none;
+  float: right;
+  margin-top: 27px;
+  font-family: 'Colfax bold';
+  color: #42545f;
+  text-decoration: none;
+}
+#main-nav .mobile-menu-button img {
+  float: left;
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+}
+@media all and (max-width: 767px) {
+  #main-nav .mobile-menu-button {
+    display: block;
+    margin-right: 10px;
+  }
+}
+#main-nav ul {
+  margin: 0px;
+  padding: 0px;
+  float: right;
+}
+@media all and (max-width: 767px) {
+  #main-nav ul {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    height: auto;
+    min-height: 5px;
+    overflow: hidden;
+    background: #fff;
+    z-index: 5;
+  }
+}
+#main-nav li {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: block;
+  float: left;
+  margin: 0px 27px 0px 0px;
+  line-height: 95px;
+}
+#main-nav li a {
+  color: #42545f;
+  font-size: 18px;
+  font-family: 'Colfax regular';
+  text-decoration: none;
+}
+#main-nav li a:hover {
+  border-bottom: 3px solid #42545f;
+  padding-bottom: 6px;
+}
+@media all and (max-width: 991px) {
+  #main-nav li {
+    margin-right: 20px;
+  }
+  #main-nav li a {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 767px) {
+  #main-nav li {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ededed;
+  }
+  #main-nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+#main-nav li.request {
+  margin-right: 0px;
+}
+#main-nav li.request a {
+  margin-top: 21px;
+  border: 2px solid #ededed;
+  height: 54px;
+  display: block;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+  width: auto;
+  padding: 0px 28px 0px 23px;
+  line-height: 52px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+}
+
+#main-nav li.request a:hover {
+  background: #EDEDED;
+  border-color: #DDD;
+}
+
+@media all and (max-width: 991px) {
+  #main-nav li.request {
+    margin-right: 0px;
+  }
+  #main-nav li.request a {
+    margin-top: 27px;
+    padding: 0px 10px;
+    height: 40px;
+    line-height: 36px;
+  }
+}
+@media all and (max-width: 767px) {
+  #main-nav li.request {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+  }
+  #main-nav li.request a {
+    border: 0px;
+    border-radius: 0px;
+    background: #ededed;
+    margin-top: 0px;
+    height: 100%;
+    line-height: 30px;
+  }
+}
+#main-nav .logo {
+  margin-top: 29px;
+  margin-left: 1px;
+  float: left;
+}
+#main-nav .logo a {
+  font-size: 30px;
+  color: #42545f;
+  font-family: 'Colfax medium';
+  text-decoration: none;
+}
+#main-nav .logo a:hover {
+  border-bottom: 3px solid #42545f;
+  padding-bottom: 6px;
+}
+
+
+@media all and (max-width: 991px) {
+  #main-nav .logo {
+    width: 180px;
+    height: auto;
+    margin-top: 37px;
+  }
+  #main-nav .logo a {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 767px) {
+  #main-nav .logo {
+    padding-left: 10px;
+    margin-top: 27px;
+  }
+  #main-nav .logo a {
+    font-size: 19px;
+  }
+}
+
+.section-indicators {
+  float: right;
+  margin-top: 92px;
+  position: relative;
+  z-index: 2;
+  margin-right: 100px;
+}
+@media all and (max-width: 1330px) {
+  .section-indicators {
+    margin-right: 0px;
+  }
+}
+@media all and (max-width: 1199px) {
+  .section-indicators {
+    margin-right: 20px;
+  }
+}
+@media all and (max-width: 991px) {
+  .section-indicators {
+    margin-right: 10px;
+  }
+}
+@media all and (max-width: 767px) {
+  .section-indicators {
+    margin: 20px auto;
+    width: 100%;
+  }
+}
+.section-indicators ul {
+  margin: 0px;
+  padding: 0px;
+}
+@media all and (max-width: 767px) {
+  .section-indicators ul {
+    display: block;
+    height: auto;
+    min-height: 5px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+  }
+}
+.section-indicators li {
+  margin: 11px 0px 14px;
+  padding: 0px;
+  list-style-type: none;
+  display: block;
+  height: auto;
+  min-height: 5px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 255px;
+  height: 124px;
+  text-align: center;
+  line-height: 124px;
+  background: rgba(0, 0, 0, 0.2);
+}
+@media all and (max-width: 991px) {
+  .section-indicators li {
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+@media all and (max-width: 767px) {
+  .section-indicators li {
+    width: 30%;
+    margin: 0px 1%;
+    display: inline-block;
+    float: none;
+  }
+}
+@media all and (max-width: 555px) {
+  .section-indicators li {
+    height: 60px;
+    line-height: 60px;
+  }
+}
+.section-indicators a {
+  font-family: 'Colfax bold';
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 30px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media all and (max-width: 555px) {
+  .section-indicators a {
+    font-size: 24px;
+  }
+}
+.section-indicators a:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #ff00ba;
+  border: 0px;
+}
+.section-indicators li.active a {
+  background: rgba(255, 255, 255, 0.9);
+  color: #ff00ba;
+  border: 0px;
+}
+
+.inner {
+  padding: 92px 100px 20px;
+  float: left;
+  background: #fff;
+  height: 100%;
+  min-height: 614px;
+  overflow: hidden;
+  width: 861px;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid #ededed;
+}
+@media all and (max-width: 1330px) {
+  .inner {
+    padding: 80px 40px 20px;
+    width: 720px;
+  }
+}
+@media all and (max-width: 1199px) {
+  .inner {
+    width: 640px;
+    padding: 80px 30px 20px;
+  }
+}
+@media all and (max-width: 991px) {
+  .inner {
+    width: 500px;
+    padding: 60px 20px 20px;
+  }
+}
+@media all and (max-width: 767px) {
+  .inner {
+    width: 100%;
+    height: auto;
+    min-height: 5px;
+    overflow: hidden;
+    padding: 20px 10px;
+  }
+}
+.inner h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+  color: #42545f;
+  font-size: 54px;
+  font-family: 'Colfax bold';
+}
+.inner h2 strong {
+  font-weight: 400;
+  color: #ff00ba;
+}
+@media all and (max-width: 1199px) {
+  .inner h2 {
+    font-size: 50px;
+  }
+}
+@media all and (max-width: 991px) {
+  .inner h2 {
+    font-size: 40px;
+  }
+}
+@media all and (max-width: 767px) {
+  .inner h2 {
+    font-size: 34px;
+  }
+}
+@media all and (max-width: 555px) {
+  .inner h2 {
+    font-size: 26px;
+  }
+}
+.inner p {
+  display: block;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.4em;
+  color: #607683;
+  margin: 18px 0px;
+}
+@media all and (max-width: 1199px) {
+  .inner p {
+    font-size: 26px;
+  }
+}
+@media all and (max-width: 767px) {
+  .inner p {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 555px) {
+  .inner p {
+    font-size: 18px;
+  }
+}
+.inner a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #08acd8;
+  font-size: 30px;
+  text-decoration: none;
+  position: relative;
+}
+.inner a:hover {
+  color: #42545f;
+}
+
+.inner a:after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #08acd8;
+}
+@media all and (max-width: 1199px) {
+  .inner a {
+    font-size: 26px;
+  }
+}
+@media all and (max-width: 767px) {
+  .inner a {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 555px) {
+  .inner a {
+    font-size: 18px;
+  }
+}
+
+.people {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 614px;
+  overflow: hidden;
+/*  background: url(../img/bg1.jpg) -310px top;*/
+  background: url(../img/bg1.jpg) left top;
+/*  background-size: cover;
+*/}
+@media all and (max-width: 992px) {
+  .people {
+    background: #fff;
+  }
+}
+@media all and (max-width: 767px) {
+  .people {
+    padding-top: 20px;
+    height: auto;
+    min-height: 5px;
+    overflow: hidden;
+  }
+}
+.people .color-overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: -webkit-linear-gradient(200deg, #0bffd4 10%, #009bc7 54%);
+  background: -moz-linear-gradient(200deg, #0bffd4 10%, #009bc7 54%);
+  background: -o-linear-gradient(200deg, #0bffd4 10%, #009bc7 54%);
+  -pie-background: linear-gradient(200deg, #0bffd4 10%, #009bc7 54%);
+  background: linear-gradient(200deg, #0bffd4 10%, #009bc7 54%);
+  behavior: url(PIE.php);
+  position: relative;
+  position: absolute;
+}
+@media all and (max-width: 992px) {
+  .people .color-overlay {
+    background: #fff;
+  }
+}
+
+.on-fixed-menu {
+  margin-top: 95px;
+}
+@media all and (max-width: 767px) {
+  .on-fixed-menu {
+    margin-top: 60px;
+  }
+}
+
+.site-content {
+  height: auto;
+  min-height: 5px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.place {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 614px;
+  overflow: hidden;
+  background: url(../img/bg2.jpg) left top;
+}
+@media all and (max-width: 992px) {
+  .place {
+    background: #fff;
+  }
+}
+@media all and (max-width: 767px) {
+  .place {
+    padding-top: 20px;
+    height: auto;
+    min-height: 5px;
+    overflow: hidden;
+  }
+}
+.place .color-overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: -webkit-linear-gradient(200deg, #fff10b 10%, #c77000 44%);
+  background: -moz-linear-gradient(200deg, #fff10b 10%, #c77000 44%);
+  background: -o-linear-gradient(200deg, #fff10b 10%, #c77000 44%);
+  -pie-background: linear-gradient(200deg, #fff10b 10%, #c77000 44%);
+  background: linear-gradient(200deg, #fff10b 10%, #c77000 44%);
+  behavior: url(PIE.php);
+  position: relative;
+  position: absolute;
+}
+@media all and (max-width: 992px) {
+  .place .color-overlay {
+    background: #fff;
+  }
+}
+
+.why {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 641px;
+  overflow: hidden;
+  background: url(../img/bg3.jpg) no-repeat right
+   top;
+  background-size: cover;
+}
+@media all and (max-width: 992px) {
+  .why {
+    background: #fff;
+  }
+}
+@media all and (max-width: 767px) {
+  .why {
+    padding-top: 20px;
+    height: auto;
+    min-height: 5px;
+    overflow: hidden;
+  }
+}
+.why .color-overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: -webkit-linear-gradient(200deg, #6384bc 0%, #782950 100%);
+  background: -moz-linear-gradient(200deg, #6384bc 0%, #782950 100%);
+  background: -o-linear-gradient(200deg, #6384bc 0%, #782950 100%);
+  -pie-background: linear-gradient(200deg, #6384bc 0%, #782950 100%);
+  background: linear-gradient(200deg, #6384bc 0%, #782950 100%);
+  behavior: url(PIE.php);
+  position: relative;
+  position: absolute;
+}
+@media all and (max-width: 992px) {
+  .why .color-overlay {
+    background: #fff;
+  }
+}
+.why .inner {
+  padding-top: 109px;
+  height: 641px;
+}
+@media all and (max-width: 767px) {
+  .why .inner {
+    padding-top: 10px;
+    height: auto;
+    min-height: 5px;
+    overflow: hidden;
+  }
+}
+.why .section-indicators {
+  margin-top: 109px;
+}
+@media all and (max-width: 767px) {
+  .why .section-indicators {
+    margin-top: 20px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 116px;
+  background: #fff;
+  border-top: 1px solid #ededed;
+}
+@media all and (max-width: 767px) {
+  footer {
+    height: 60px;
+  }
+}
+footer .container {
+  width: 1110px;
+}
+@media all and (max-width: 1330px) {
+  footer .container {
+    width: 1040px;
+  }
+}
+@media all and (max-width: 1199px) {
+  footer .container {
+    width: 960px;
+  }
+}
+@media all and (max-width: 991px) {
+  footer .container {
+    width: 740px;
+  }
+}
+@media all and (max-width: 767px) {
+  footer .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+footer ul {
+  margin: 0px;
+  padding: 0px;
+  float: right;
+}
+@media all and (max-width: 767px) {
+  footer ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: auto;
+    min-height: 5px;
+    overflow: hidden;
+    background: #fff;
+    z-index: 5;
+  }
+}
+footer li {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: block;
+  float: left;
+  margin: 0px 27px 0px 0px;
+  line-height: 112px;
+}
+footer li a {
+  color: #42545f;
+  font-size: 18px;
+  font-family: 'Colfax regular';
+  text-decoration: none;
+}
+@media all and (max-width: 991px) {
+  footer li {
+    margin-right: 20px;
+  }
+  footer li a {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 767px) {
+  footer li {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+footer li.request {
+  margin-right: 0px;
+}
+footer li.request a {
+  margin-top: 28px;
+  border: 2px solid #ededed;
+  height: 54px;
+  display: block;
+  width: auto;
+  padding: 0px 28px 0px 23px;
+  line-height: 52px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+}
+@media all and (max-width: 991px) {
+  footer li.request {
+    margin-right: 0px;
+  }
+  footer li.request a {
+    margin-top: 36px;
+    padding: 0px 10px;
+    height: 40px;
+    line-height: 36px;
+  }
+}
+@media all and (max-width: 767px) {
+  footer li.request {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+footer .mobile-menu-button {
+  display: none;
+  float: right;
+  margin-top: 27px;
+  font-family: 'Colfax bold';
+  color: #42545f;
+  text-decoration: none;
+}
+footer .mobile-menu-button img {
+  float: left;
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+}
+@media all and (max-width: 767px) {
+  footer .mobile-menu-button {
+    display: none;
+    margin-right: 10px;
+  }
+}
+footer .logo {
+  margin-top: 36px;
+  margin-left: 1px;
+  float: left;
+}
+footer .logo a {
+  font-size: 30px;
+  color: #42545f;
+  font-family: 'Colfax medium';
+  text-decoration: none;
+}
+
+footer .logo a:hover {
+padding-bottom: 6px;
+border-bottom: 3px solid #42545f;
+}
+
+@media all and (max-width: 991px) {
+  footer .logo {
+    width: 180px;
+    height: auto;
+    margin-top: 45px;
+  }
+  footer .logo a {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 767px) {
+  footer .logo {
+    padding-left: 10px;
+    margin-top: 27px;
+  }
+  footer .logo a {
+    font-size: 19px;
+  }
+}
