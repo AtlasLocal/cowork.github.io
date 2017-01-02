@@ -126,7 +126,7 @@ body {
 
 .main-display {
   width: 100%;
-  height: auto;
+  height: 100%;
   background: url(../img/main-display.jpg) no-repeat center top;
   background-size: cover;
   position: relative;
@@ -134,12 +134,12 @@ body {
 }
 @media all and (max-width: 991px) {
   .main-display {
-    height: auto;
+    height: 100%;
   }
 }
 @media all and (max-width: 767px) {
   .main-display {
-    height: auto;
+    height: 100%;
     min-height: 5px;
     overflow: hidden;
     padding-left: 40px;
